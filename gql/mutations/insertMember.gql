@@ -1,0 +1,26 @@
+mutation insertMember(
+  $class: String = ""
+  $department_id: uuid = ""
+  $email: String = ""
+  $major_id: uuid = ""
+  $name: String = ""
+  $status: Int = 10
+  $tel: String = ""
+) {
+  insert_members(
+    objects: {
+      class: $class
+      department_id: $department_id
+      email: $email
+      major_id: $major_id
+      name: $name
+      status: $status
+      tel: $tel
+    }
+  ) {
+    affected_rows
+    returning {
+      id
+    }
+  }
+}

@@ -1,0 +1,8 @@
+query getDepartment {
+  department {
+    created_at
+    id
+    name
+    updated_at
+  }
+}

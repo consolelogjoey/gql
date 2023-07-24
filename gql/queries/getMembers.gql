@@ -1,0 +1,26 @@
+query getMembers {
+  members {
+    class
+    created_at
+    department_id
+    email
+    id
+    major_id
+    name
+    status
+    tel
+    updated_at
+    department {
+      name
+      id
+      updated_at
+      created_at
+    }
+    major {
+      name
+      updated_at
+      id
+      created_at
+    }
+  }
+}

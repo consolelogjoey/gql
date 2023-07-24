@@ -1,0 +1,8 @@
+query getMajor {
+  major {
+    created_at
+    id
+    name
+    updated_at
+  }
+}

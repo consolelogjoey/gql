@@ -1,0 +1,25 @@
+mutation updateMembers(
+  $id: uuid = ""
+  $name: String = ""
+  $status: Int 
+  $tel: String = ""
+  $major_id: uuid = ""
+  $email: String = ""
+  $department_id: uuid = ""
+  $class: String = ""
+) {
+  update_members(
+    where: { id: { _eq: $id } }
+    _set: {
+      name: $name
+      status: $status
+      tel: $tel
+      major_id: $major_id
+      email: $email
+      department_id: $department_id
+      class: $class
+    }
+  ) {
+    affected_rows
+  }
+}
