@@ -264,7 +264,7 @@ export default {
           query: require('~/gql/queries/getDepartment.gql').getDepartment,
         })
         .then((res) => {
-          this.departments = res.data?.department
+          this.departments = res.data?.departments
           console.log(
             '🚀 ~ file: index.vue:168 ~ .then ~ this.departments:',
             this.departments

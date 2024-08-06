@@ -1,5 +1,5 @@
 query getDepartment {
-  department {
+  departments {
     created_at
     id
     name

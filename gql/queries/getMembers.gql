@@ -10,7 +10,7 @@ query getMembers {
     status
     tel
     updated_at
-    department {
+    departments {
       name
       id
       updated_at
